@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cyan(165, 154, 154);
+  width: 100%;
+  height: 100vh;
+}
+
+.lift-elevator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  background-color: navy;
+  border: 1px solid gold;
+  border-radius: 3% 3% 0 0;
+}
+
+.floor {
+  height: 100px;
+  width: 100%;
+  border: 1px solid gold;
+  border-radius: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.elevator {
+  background: bisque;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  position: relative;
+  transition: top 0.4s linear;
+}
+
+.left,
+.right {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  transition: bottom 0.4s linear, width 0.5s ease;
+}
+
+.left {
+  background: black;
+  width: 50%;
+  left: 0;
+}
+
+.right {
+  background: black;
+  width: 50%;
+  right: 0;
+}
+
+.open-left {
+  width: 0;
+}
+
+.open-right {
+  width: 0;
+}
+
+.controls {
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.controls button,
+.controls input {
+  margin: 5px;
+  padding: 10px;
+}
+
+button {
+  width: 40px;
+}

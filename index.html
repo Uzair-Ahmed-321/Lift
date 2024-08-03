@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lift Elevator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="lift-elevator">
+        <div class="floor" id="5th">
+          <i class="fa-solid fa-building-columns"></i>
+        </div>
+        <div class="floor" id="4th"></div>
+        <div class="floor" id="3rd"></div>
+        <div class="floor" id="2nd"></div>
+        <div class="floor" id="1st"></div>
+      </div>
+      <div class="elevator">
+        <div class="left" id="left"></div>
+        <div class="right" id="right"></div>
+      </div>
+      <div class="controls">
+        <button onclick="moveLift(1)">1</button>
+        <button onclick="moveLift(2)">2</button>
+        <button onclick="moveLift(3)">3</button>
+        <button onclick="moveLift(4)">4</button>
+        <button onclick="moveLift(5)">5</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
